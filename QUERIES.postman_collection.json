@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "d868236e-a3c0-4129-8733-0077cb2c17d9",
+		"name": "QUERIES",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19117705"
+	},
+	"item": [
+		{
+			"name": "queryUserData",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8086/queryUserData?user_id=5ceed186-683b-11ee-aca7-8699b86be788&date=2010-05-21",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"queryUserData"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "5ceed186-683b-11ee-aca7-8699b86be788"
+						},
+						{
+							"key": "date",
+							"value": "2010-05-21",
+							"description": "37261"
+						},
+						{
+							"key": null,
+							"value": null,
+							"description": "43222",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "queryGameData",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8086/queryGameData?date=2010-05-25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"queryGameData"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2010-05-25",
+							"description": "Format is YYYY-MM-DD. Optional."
+						},
+						{
+							"key": "country",
+							"value": "DE",
+							"description": "Format is standard country codes. Optional.",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
